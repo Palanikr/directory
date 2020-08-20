@@ -1,0 +1,12 @@
+ -hosts: localhost
+  remote_user: ec2-user
+  become: yes
+  tasks: 
+     - name: create directory
+       file:
+          path: /etc/ec2-user/tech
+          state: directory
+          mode: '0755'
+
+           
+      
